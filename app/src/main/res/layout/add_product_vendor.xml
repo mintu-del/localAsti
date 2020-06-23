@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="50sp"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/productnametextview"
+                android:text="Product Name"
+                >
+
+            </TextView>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_name_add"
+                android:hint="ProductName"
+                android:maxLength="12"
+
+
+                ></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:id="@+id/linearlayoutproductQuantity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                style="@style/light">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/product_quantity_add"
+                style="@style/light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Quantity"
+                android:inputType="number"></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:id="@+id/linearlayoutproductRate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/light"
+                android:text="Rate">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/product_rate_add"
+                style="@style/light"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:hint="Rate"
+                android:inputType="numberDecimal"></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:id="@+id/linearlayoutproductDesc">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/light"
+                android:text="Description">
+
+            </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/light"
+                    android:text="(include packaging size)*"
+                    android:textSize="10dp"
+                    android:textColor="#E71C1C">
+                </TextView>
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:id="@+id/product_desc_add"
+                style="@style/light"
+                android:layout_marginLeft="10dp"
+                android:maxLength="19"
+                ></EditText>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

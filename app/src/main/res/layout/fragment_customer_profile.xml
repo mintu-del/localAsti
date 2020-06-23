@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:orientation="vertical"
+    tools:context=".customer.CustomerProfileFragment">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/customer_profile_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/cust_linlayout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/profile_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <TextView
+            android:id="@+id/profile_cust_actual_name"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Random_name"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cust_linlayout_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/profile_cust_mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="Mobile No"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <TextView
+            android:id="@+id/profile_cust_actual_mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile Number"
+            android:textSize="18sp"
+            style="@style/light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cust_linlayout_delivery_address_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profile_cust_del_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="Delivery Address Name"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <TextView
+            android:id="@+id/profile_cust_actual_del_address_name"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Random Name2"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/editTextDelName"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:hint="Name"
+            style="@style/light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cust_linlayout_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profile_cust_del_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:text="Delivery Address"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <TextView
+            android:id="@+id/profile_cust_actual_del_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delivery_Address_Here"
+            android:textSize="18sp"
+            style="@style/light"/>
+
+        <EditText
+            android:id="@+id/editTextDelAddr"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:hint="Name"
+            style="@style/light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:background="#FFF">
+
+        <Button
+            android:id="@+id/update_button_cust_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorPrimary"
+            android:text="Update"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/save_button_cust_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

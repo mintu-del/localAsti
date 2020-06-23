@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:id="@+id/customer_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Ravi">
+            </TextView>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/customer_adr_pho"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:autoLink="all"
+                android:layout_marginEnd="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Address and phone number"
+                android:layout_marginRight="10dp">
+            </TextView>
+
+
+            <ImageButton
+                android:background="@android:drawable/ic_menu_delete"
+                android:id="@+id/delete_button"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+            </ImageButton>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingHorizontal="10dp"
+            android:id="@+id/Products_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:layout_margin="2dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/subscription_date_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/cumulative_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Amount"
+            android:background="#FFF"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount"
+                android:inputType="numberDecimal"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:gravity="center_horizontal"
+                android:layout_width="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/activate_button"
+            android:text="Update"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

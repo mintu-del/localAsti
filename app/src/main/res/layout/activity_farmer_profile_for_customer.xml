@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.FarmerProfileForCustomer"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/farmer_profile_image"
+            android:src="@mipmap/localastinew"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:adjustViewBounds="true">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/farmer_profile_name"
+            android:gravity="center_horizontal"
+            android:text="Name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Certificates"
+        android:textSize="28sp"
+
+        android:layout_margin="10dp">
+
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/certificate_recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Days of Delivery"
+            android:textColor="#000"
+            android:gravity="center">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sun"
+                android:id="@+id/day_sun"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mon"
+                android:id="@+id/day_mon"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tue"
+                android:id="@+id/day_tue"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Wed"
+                android:id="@+id/day_wed"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Thu"
+                android:id="@+id/day_thu"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Fri"
+                android:id="@+id/day_fri"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sat"
+                android:id="@+id/day_sat"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

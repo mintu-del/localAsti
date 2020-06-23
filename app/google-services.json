@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "709896991759",
+    "firebase_url": "https://localasti-1863f.firebaseio.com",
+    "project_id": "localasti-1863f",
+    "storage_bucket": "localasti-1863f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709896991759:android:455a7495f4ceda75015f7a",
+        "android_client_info": {
+          "package_name": "com.organicasti.localasti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709896991759-3ot9epk3gcmf545ipi0lllj2ses6fkds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organicasti.localasti",
+            "certificate_hash": "fefffa50386ecc57d96bbb6782b7c50d4530aa80"
+          }
+        },
+        {
+          "client_id": "709896991759-9rbtomah8oc5qcjae2ccmj4vrpsbt9q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organicasti.localasti",
+            "certificate_hash": "267beb2979952c72193816721919424e2867686f"
+          }
+        },
+        {
+          "client_id": "709896991759-6l44gbq0t6apo786mp6ui3ajlb0uj4f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDEKz5N91IKGs9ZhtXTp5yzfHLQ_TKBZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709896991759-6l44gbq0t6apo786mp6ui3ajlb0uj4f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709896991759:android:2fc334928d12495e015f7a",
+        "android_client_info": {
+          "package_name": "com.organicindiastory.localasti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709896991759-i73b2mhdh5b25f1v1s3ojelf67fq4ouu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.organicindiastory.localasti",
+            "certificate_hash": "267beb2979952c72193816721919424e2867686f"
+          }
+        },
+        {
+          "client_id": "709896991759-6l44gbq0t6apo786mp6ui3ajlb0uj4f7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDEKz5N91IKGs9ZhtXTp5yzfHLQ_TKBZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709896991759-6l44gbq0t6apo786mp6ui3ajlb0uj4f7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

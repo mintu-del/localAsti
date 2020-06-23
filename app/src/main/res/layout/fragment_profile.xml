@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/customer_profile_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:id="@+id/vend_linlayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_vend_name"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_name"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Random_name"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vend_linlayout_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_vend_mobile_no"
+                style="@style/light"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Mobile No"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_mobile_no"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mobile Number"
+
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="UPI No"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_upi"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="abc@UPI.com"
+
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/vend_linlayout_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_vend_delivery"
+                style="@style/light"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Delivery Area"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_delivery"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add delivery areas"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profile_vend_cert"
+                style="@style/light"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Certificates"
+
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_cert"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add type of Cert. available"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/light"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Delivery Days"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/profile_vend_actual_dDays"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add delivery days"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textdelivery"
+            style="@style/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Click to add delivery location:-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/add_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addresstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+
+                android:padding="12dp"
+                android:text="Add Delivery\n Area"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#DFC0C0"
+                android:outlineAmbientShadowColor="#2196F3"
+                android:outlineSpotShadowColor="#009688"
+
+                android:prompt="@string/city_prompt"
+
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/add_vend_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@color/colorPrimary"
+                android:text="Add Area"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCertifiate"
+            style="@style/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Click to add your Certificate:-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/add_cert_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/certTypetext"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:padding="12dp"
+                    android:text="Choose type of certificate"
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spinnerCert"
+                    android:layout_width="138dp"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="8dp"
+                    android:background="#DFC0C0"
+                    android:outlineAmbientShadowColor="#2196F3"
+                    android:outlineSpotShadowColor="#009688"
+
+                    android:prompt="@string/city_prompt"
+
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/certNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="10dp"
+                    android:padding="12dp"
+                    android:text="Enter Certificate No."
+                    android:textAlignment="center"
+                    android:textColor="#009688"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/certNo"
+                    android:layout_width="211dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_vend_cert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:background="@color/colorPrimary"
+            android:text="Add Certificate"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textDays"
+            style="@style/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Click to set Delivery Days:-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/dayCategory"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="451dp">
+
+            <RadioButton
+                android:id="@+id/allDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="All 7 days"
+                android:visibility="gone"/>
+
+            <RadioButton
+                android:id="@+id/customDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Set Custom Days"
+                android:visibility="gone"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/deliveryLayout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:text="Monday"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:text="Tuesday"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:text="Wednesday"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:text="Thursday"
+                    android:visibility="gone"/>
+
+                <CheckBox
+                    android:id="@+id/fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:visibility="gone"
+                    android:text="Friday" />
+
+                <CheckBox
+                    android:id="@+id/sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:visibility="gone"
+                    android:text="Saturday" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:text="Sunday"
+                android:visibility="gone"/>
+
+            <Button
+            android:id="@+id/add_vend_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+                android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Confirm"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_button_vend_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+

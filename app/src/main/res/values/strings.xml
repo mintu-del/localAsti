@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">LocalAsti</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="Rs">\u20B9</string>
+    <string name="navigation_drawer_close" tools:ignore="ExtraTranslation">Close navigation drawer</string>
+
+    <string name="linktosite">
+        <a href="http://milkasti.com/">T&amp;C</a>
+    </string>
+
+
+    <string name="city_prompt">Choose</string>
+
+    <string-array name="city_arrays">
+        <item>MNIT Jaipur</item>
+        <item>Roorkee</item>
+        <item>Vasant Kunj Delhi</item>
+        <item>Mahima Panache,Jaipur</item>
+        <item>Bhopal</item>
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">Price(\u20B9)</string>
+</resources>

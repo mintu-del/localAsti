@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="0dp"
+    android:padding="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    tools:targetApi="lollipop"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+       <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="#FFF">
+        </CheckBox>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/checkbox"
+            android:layout_toRightOf="@+id/checkbox"
+            android:layout_marginTop="5dp"
+            >
+        <TextView
+            android:layout_toEndOf="@+id/checkbox"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/name"
+            android:text="SAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/checkbox"
+            style="@style/light">
+        </TextView>
+
+        <TextView
+
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/description"
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/checkbox"
+            android:textSize="8dp"
+            android:textColor="#8D7575"
+            style="@style/light">
+        </TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/product_price"
+            android:text="25 Rs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/light">
+        </TextView>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageButton
+                android:background="@drawable/edit"
+                android:id="@+id/remove"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_remove"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/quantity_count"
+                style="@style/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="7dp"
+                android:text="1"></TextView>
+
+            <ImageButton
+                android:background="@drawable/edit"
+                android:id="@+id/add"
+                android:src="@drawable/ic_add"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+            </ImageButton>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

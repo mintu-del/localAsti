@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".vendor.ProductFragment"
+    android:background="#FFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Product"
+            android:textColor="#009688"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--        for heading-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/p_product_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Product Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    style="@style/light"
+                    android:layout_marginRight="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/p_product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/p_product_name"
+                    android:layout_toRightOf="@+id/p_product_name"
+                    android:text="Qty"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+
+                     android:layout_marginLeft="5dp"
+
+                    android:layout_marginRight="5dp"
+                    style="@style/light"></TextView>
+
+                <TextView
+                    android:id="@+id/p_product_amount"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/p_product_quantity"
+
+                    android:layout_toRightOf="@+id/p_product_quantity"
+                    android:gravity="end"
+                    android:text="Rate"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    style="@style/light"></TextView>
+
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/productRecylcerView"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_add"
+                    android:text="Add Product"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1">
+                </Button>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout >

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+        <TextView
+            android:text="Select type of account"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/Vendor"
+                android:text="Vendor"
+                android:layout_width='200dp'
+                android:layout_margin="3dp"
+                android:layout_height="match_parent">
+            </Button>
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/Customer"
+                android:text="Customer"
+                android:layout_margin="3dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+            </Button>
+
+        <TextView
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:text="This action can't be undone"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/RelativeLayout"
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAllCaps="true"
+            android:text="Subscription"
+            android:layout_centerInParent="true"
+            android:textColor="#000"> </TextView>
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/edit"
+            android:id="@+id/addNewSubscription"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Add New"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+        </Button>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/RelativeLayout"
+        android:id="@+id/tabLayout"
+        android:layout_height="40dp"
+        android:layout_width="match_parent">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_subscription"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tabLayout">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
