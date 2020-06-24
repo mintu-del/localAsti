@@ -66,7 +66,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 //        Log.d(TAG,"product ved desc "+prodObj.getDescription());
         holder.prodAmount.setText(prodObj.Rate);
         holder.prodDesc.setText(prodObj.Description);
-
+        holder.prodPackagesize.setText(prodObj.Packagesize);
 
 
         holder.mview.setOnClickListener(new View.OnClickListener() {
@@ -81,12 +81,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                 final EditText quantity = (EditText) viewInflated.findViewById(R.id.product_quantity_add);
                 final EditText rate = (EditText) viewInflated.findViewById(R.id.product_rate_add);
                 final EditText desc = (EditText) viewInflated.findViewById(R.id.product_desc_add);
+                final EditText pacsize = (EditText) viewInflated.findViewById(R.id.product_packetsize);
 
                 rate.setText(holder.prodAmount.getText());
                 name.setText(holder.prodname.getText());
                 quantity.setText(holder.prodQuant.getText());
                 desc.setText(holder.prodDesc.getText());
-
+             pacsize.setText(holder.prodPackagesize.getText());
                 builder.setView(viewInflated);
                 builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -97,8 +98,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                         double ratee = Double.parseDouble(rate.getText().toString());
                         String productID = data.get(position).productID;
                         final String prod_desc = desc.getText().toString();
+                        int Packagesize = Integer.parseInt(pacsize.getText().toString());
+
                         data.remove(position);
-                        data.add(new ProductVendorClass(prod_name, productID, Integer.toString(quant),Double.toString(ratee),prod_desc));
+                        data.add(new ProductVendorClass(prod_name, productID, Integer.toString(quant),Double.toString(ratee),prod_desc,Integer.toString(Packagesize)));
                         notifyDataSetChanged();
 
 
@@ -125,6 +128,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                         product.put("ProductID", productID);
                         product.put("VendorID", user.getUid());
                         product.put("Description", prod_desc);
+                        product.put("Package Size", Packagesize );
 
                         db.collection("Products").document(productID)
                                 .set(product)
@@ -209,7 +213,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     }
 
     public class ProductViewHolder extends RecyclerView.ViewHolder {
-        TextView prodname, prodQuant,prodAmount,prodDesc;
+        TextView prodname, prodQuant,prodAmount,prodDesc,prodPackagesize;
         View mview;
 
         public ProductViewHolder(@NonNull View itemView) {
@@ -218,6 +222,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             prodQuant = (TextView)itemView.findViewById(R.id.product_quantity);
             prodAmount = (TextView)itemView.findViewById(R.id.product_amount);
             prodDesc=(TextView)itemView.findViewById(R.id.product_descr);
+            prodPackagesize = (TextView)itemView.findViewById(R.id.product_packetsize);
 
             mview = itemView;
 

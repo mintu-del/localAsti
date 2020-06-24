@@ -7,14 +7,16 @@ public class ProductVendorClass {
     String Rate;
     String Quantity;
     String Description;
+    String Packagesize;
 
 
-    public ProductVendorClass(String productName, String productID, String rate, String quantity,String description) {
+    public ProductVendorClass(String productName, String productID, String rate, String quantity,String description,String packagesize) {
         ProductName = productName;
         this.productID = productID;
         Rate = rate;
         Quantity = quantity;
         Description=description;
+        Packagesize=packagesize;
     }
 
     public String getDescription() {
@@ -57,6 +59,13 @@ public class ProductVendorClass {
         Quantity = quantity;
     }
 
+    public String getPackageSize() {
+        return Packagesize;
+    }
+
+    public void setPackageSize(String packagesize) {
+        Packagesize = packagesize;
+    }
 
 
 }

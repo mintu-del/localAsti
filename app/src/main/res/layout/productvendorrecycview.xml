@@ -42,11 +42,22 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         />
+
     <TextView android:id="@+id/product_amount"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/product_quantity"
         android:layout_toRightOf="@+id/product_quantity"
+        android:gravity="end"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="25"
+        />
+
+    <TextView android:id="@+id/product_packetsize"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/product_amount"
+        android:layout_toRightOf="@+id/product_amount"
         android:gravity="end"
         android:textColor="@color/colorPrimaryDark"
         android:text="45/kg"

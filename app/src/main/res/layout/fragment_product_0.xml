@@ -49,33 +49,53 @@
                     android:textSize="18dp"
                     android:textStyle="bold"
                     style="@style/light"
-                    android:layout_marginRight="15dp"></TextView>
+                    >
+
+                </TextView>
 
                 <TextView
                     android:id="@+id/p_product_quantity"
+                    style="@style/light"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/p_product_name"
+
                     android:layout_toRightOf="@+id/p_product_name"
+
                     android:text="Qty"
                     android:textSize="18dp"
-                    android:textStyle="bold"
 
-                     android:layout_marginLeft="5dp"
-
-                    android:layout_marginRight="5dp"
-                    style="@style/light"></TextView>
+                    android:textStyle="bold"></TextView>
 
                 <TextView
                     android:id="@+id/p_product_amount"
 
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/p_product_quantity"
 
                     android:layout_toRightOf="@+id/p_product_quantity"
                     android:gravity="end"
                     android:text="Rate"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    style="@style/light"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/p_package_size"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/p_product_amount"
+android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/p_product_amount"
+                    android:gravity="end"
+                    android:text="Pack Size"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     style="@style/light"></TextView>

@@ -288,6 +288,8 @@ public class CustomerSubscriptionFragment extends Fragment
                                                             String Quantity =   Objects.requireNonNull(snapshot.get("Quantity")).toString();
                                                             String Price = Objects.requireNonNull(snapshot1.get("Rate")).toString();
                                                             String description = snapshot1.get("Description").toString();
+                                                   //         String Quantity =   Objects.requireNonNull(snapshot.get("Quantity")).toString();
+
                                                             holder.documentID = snapshot.getId();
                                                             ProductDetails details = new ProductDetails(Name,Quantity,Price,description);
                                                             holder.productDetailsArrayList.add(details);

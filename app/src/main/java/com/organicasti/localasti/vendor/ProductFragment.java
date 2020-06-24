@@ -69,7 +69,8 @@ public class ProductFragment extends Fragment {
                                 document.getId().toString(),
                                 m.get("Rate").toString(),
                                 m.get("Quantity").toString(),
-                                m.get("Description").toString());
+                                m.get("Description").toString(),
+                                m.get("PackageSize").toString());
                         l.add(obj);
                         m.clear();
 
@@ -94,7 +95,7 @@ public class ProductFragment extends Fragment {
                 final EditText quantity = (EditText) viewInflated.findViewById(R.id.product_quantity_add);
                 final EditText rate = (EditText) viewInflated.findViewById(R.id.product_rate_add);
                 final EditText desc = (EditText) viewInflated.findViewById(R.id.product_desc_add);
-
+                final EditText packageSize = (EditText) viewInflated.findViewById(R.id.product_packetsize);
                 builder.setView(viewInflated);
                 builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -102,19 +103,22 @@ public class ProductFragment extends Fragment {
                         final String quantitystr = quantity.getText().toString();
                         final String ratestr = rate.getText().toString();
                         final String prod_name = name.getText().toString();
+                        final String packagesize = packageSize.getText().toString();
 
                         final String prod_desc = desc.getText().toString();
                         dialog.dismiss();
                         if(prod_name.equals("") == false && quantitystr.equals("") == false && ratestr.equals("") == false & prod_desc.equals("") == false) {
                             final int quant = Integer.parseInt(quantity.getText().toString());
                             final double ratee = Double.parseDouble(rate.getText().toString());
+                            final int PackageSiz = Integer.parseInt(packageSize.getText().toString());
+
                             Map<String, Object> product = new HashMap<>();
                             product.put("ProductName", prod_name);
                             product.put("Quantity", quant);
                             product.put("Rate", ratee);
                             product.put("VendorID", user.getUid());
                             product.put("Description", prod_desc);
-
+                           product.put("PackageSize",PackageSiz);
                             db.collection("Products")
                                     .add(product)
                                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
@@ -123,7 +127,7 @@ public class ProductFragment extends Fragment {
                                             Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId());
                                             String docID = documentReference.getId();
                                             documentReference.update("ProductID", docID);
-                                            l.add(new ProductVendorClass(prod_name, docID, Double.toString(ratee), Integer.toString(quant),prod_desc));
+                                            l.add(new ProductVendorClass(prod_name, docID, Double.toString(ratee), Integer.toString(quant),prod_desc,Integer.toString(PackageSiz)));
                                             pa.notifyDataSetChanged();
                                         }
                                     })
